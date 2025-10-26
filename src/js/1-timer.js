@@ -18,3 +18,5 @@ const options = {
     console.log(selectedDates[0]);
   },
 };
+
+flatpickr(input, options);
