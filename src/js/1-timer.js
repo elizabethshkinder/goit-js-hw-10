@@ -1,8 +1,6 @@
 import flatpickr from "flatpickr";
 import "flatpickr/dist/flatpickr.min.css";
 
-flatpickr(input, options);
-
 const input = document.querySelector('#datetime-picker');
 const startBtn = document.querySelector('[data-start]');
 const daysEl = document.querySelector('[data-days]');
