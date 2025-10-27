@@ -8,6 +8,10 @@ const hoursEl = document.querySelector('[data-hours]');
 const minutesEl = document.querySelector('[data-minutes]');
 const secondsEl = document.querySelector('[data-seconds]');
 
+let selectedTime = null;
+let intervalID = null;
+
+startBtn.disabled = true;
 
 const options = {
   enableTime: true,
@@ -15,8 +19,15 @@ const options = {
   defaultDate: new Date(),
   minuteIncrement: 1,
   onClose(selectedDates) {
-    console.log(selectedDates[0]);
+    const pickedDate = selectedDates[0];
   },
 };
+
+if (pickedDate.getTime() <= Date.now()) {
+    window.alert('Please choose a date in the future');
+    startBtn.disabled = true;
+    selectedTime = null;
+    return;
+}
 
 flatpickr(input, options);
