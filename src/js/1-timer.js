@@ -27,7 +27,6 @@ if (pickedDate.getTime() <= Date.now()) {
     window.alert('Please choose a date in the future');
     startBtn.disabled = true;
     selectedTime = null;
-    return;
 }
 
 flatpickr(input, options);
