@@ -1,75 +1,115 @@
 .form {
-  max-width: 240px;
-  border: none;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
   gap: 16px;
+
+  max-width: 360px;
+  border: none;
+  margin: 0 72px;
 }
 
-.form-field {
+.form > label {
   display: flex;
   flex-direction: column;
-  gap: 8px;
-}
-
-.form-label {
   font-size: 24px;
-  font-weight: 500;
+  font-weight: 300;
   line-height: 1.2;
+  gap: 8px;
+  text-align: start;
 }
 
-.input {
-  width: 100%;
-  font-size: 24px;
+.form > label > input[type="number"] {
   padding: 16px;
-  border: 2px solid #1a1a1a;
+  border: 1px solid #343434;
   border-radius: 4px;
   outline: none;
+  line-height: 1.2;
+  width: 100%;
+  box-sizing: border-box;
+
+  font-size: 18px;
+  font-weight: 300;
 }
 
-.fieldset {
-  width: 100%;
-  border: 2px solid #1a1a1a;
-  border-radius: 4px;
-  padding: 16px;
-  font-size: 1.5rem;
+.form > label > input[type="number"]:focus {
+  outline: 1px solid #2563eb;
+  outline-offset: 0;
+}
+
+.form fieldset {
   display: flex;
   flex-wrap: wrap;
-  align-items: start;
-  column-gap: 16px;
+  align-items: center;
+  justify-content: center;
+  column-gap: 24px;
   row-gap: 12px;
 }
 
-.legend {
-  padding: 0 8px;
-  font-weight: 500;
-  text-align: left;  
-}
 
-.radio-option {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  margin-right: 24px;
+.form fieldset > legend {
   font-size: 24px;
+  font-weight: 300;
+  line-height: 1.2;
+  padding: 0 8px;
+  margin-left: 8px;
+  text-align: left;
 }
 
-.radio-input {
+.form fieldset > label {
+  display: flex;
+  gap: 8px;
+  font-size: 24px;
+  line-height: 1.2;
+  font-weight: 300;
+}
+
+form fieldset input[type="radio"] {
   width: 24px;
   height: 24px;
 }
 
-.submit-btn {
-  width: 100%;
-  font-size: 24px;
-  font-weight: 500;
-  padding: 16px;
-  border: 2px solid #1a1a1a;
+.form button[type="submit"] {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.2;
+  
+
+  border: 1px solid #343434;
   border-radius: 4px;
   background-color: #efefef;
   cursor: pointer;
+  text-align: center;
+
+  width: 100%;
+  box-sizing: border-box;
 }
-.submit-btn:hover {
+
+.form button[type="submit"]:hover {
   background-color: #e2e2e2;
 }
+
+.iziToast {
+  min-width: 360px !important;
+  max-width: 360px !important; 
+}
+
+.iziToast .iziToast-icon,
+.iziToast .iziToast-close {
+  display: none !important;
+}
+
+.iziToast-wrapper {
+  top: 35% !important;      
+  right: 24px;       
+}
+
+.iziToast.toast-success {
+  background: #88d598 !important;
+}
+
+.iziToast.toast-error {
+  background: #e36f6f !important;
+}
+
+
+
