@@ -1,0 +1,75 @@
+.form {
+  max-width: 240px;
+  border: none;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-label {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.input {
+  width: 100%;
+  font-size: 24px;
+  padding: 16px;
+  border: 2px solid #1a1a1a;
+  border-radius: 4px;
+  outline: none;
+}
+
+.fieldset {
+  width: 100%;
+  border: 2px solid #1a1a1a;
+  border-radius: 4px;
+  padding: 16px;
+  font-size: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+  column-gap: 16px;
+  row-gap: 12px;
+}
+
+.legend {
+  padding: 0 8px;
+  font-weight: 500;
+  text-align: left;  
+}
+
+.radio-option {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-right: 24px;
+  font-size: 24px;
+}
+
+.radio-input {
+  width: 24px;
+  height: 24px;
+}
+
+.submit-btn {
+  width: 100%;
+  font-size: 24px;
+  font-weight: 500;
+  padding: 16px;
+  border: 2px solid #1a1a1a;
+  border-radius: 4px;
+  background-color: #efefef;
+  cursor: pointer;
+}
+.submit-btn:hover {
+  background-color: #e2e2e2;
+}
